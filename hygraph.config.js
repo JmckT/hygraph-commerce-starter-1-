@@ -1,15 +1,6 @@
 module.exports = {
-  locales: [
-    {
-      value: 'en',
-      label: 'English',
-      default: true
-    },
-    {
-      value: 'de',
-      label: 'German'
-    }
-  ],
+  locales: ['en-US', 'fr', 'nl-NL'],
+  defaultLocale: 'en-US',
   currencies: [
     {
       code: 'GBP',
@@ -17,6 +8,14 @@ module.exports = {
     },
     {
       code: 'EUR'
-    }
-  ]
-}
+    },
+  ],
+  
+  domains: [ 
+    {
+      domain: 'http://localhost:4242',
+  defaultLocale: '4242',
+  http: true,
+    },
+   ],
+  },
